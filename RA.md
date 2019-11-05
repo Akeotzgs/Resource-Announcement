@@ -40,7 +40,6 @@
 >FJOBDCKL_03203 Lipopolysaccharide export system permease protein LptG
 >FJOBDCKL_03354 Lipopolysaccharide assembly protein B`
 > - This showed that there are at least 12 directly named proteins invovled with the synthesis and construction of LPS in the organism, which would be consistent with a gram negative bacteria. 
-> - Next I looked for genes that could be used on 
 
 
 
