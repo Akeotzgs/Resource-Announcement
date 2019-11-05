@@ -22,5 +22,26 @@
 > - `awk '/^>/{print ">RA_" ++i; next}{print}' < contigs.fasta > contigs_names.fasta`
 > - `prokka --outdir RA --prefix RA contigs_names.fasta`
 
+## Analysis of Annotation
+> - I was specifically interested in analyzing the annotation of the assembled de novo genome in a way that could point to specific markers of 'Halomonas alimentaria' and less specifically other Halomonas species. 
+> - Knowing that 'Halomonas alimentaria' is a gram negative bacteria, there should be protein coding sequences that are related to Lipopolysaccharide (LPS) synthesis and construction. To search to see if these are present within the bacteria I did the following:
+> - `grep -i lipopolysaccharide RA.ffn`
+> - This resulted in the following output: 
+> - `>FJOBDCKL_00048 Lipopolysaccharide export system ATP-binding protein LptB
+>FJOBDCKL_00049 Lipopolysaccharide export system protein LptA
+>FJOBDCKL_00050 Lipopolysaccharide export system protein LptC
+>FJOBDCKL_00421 Lipopolysaccharide assembly protein A
+>FJOBDCKL_00422 Lipopolysaccharide assembly protein B
+>FJOBDCKL_01521 Lipopolysaccharide export system ATP-binding protein LptB
+>FJOBDCKL_01799 Lipopolysaccharide core heptosyltransferase RfaQ
+>FJOBDCKL_02595 Lipopolysaccharide export system ATP-binding protein LptB
+>FJOBDCKL_03134 Lipopolysaccharide export system ATP-binding protein LptB
+>FJOBDCKL_03202 Lipopolysaccharide export system permease protein LptF
+>FJOBDCKL_03203 Lipopolysaccharide export system permease protein LptG
+>FJOBDCKL_03354 Lipopolysaccharide assembly protein B`
+> - This showed that there are at least 12 directly named proteins invovled with the synthesis and construction of LPS in the organism, which would be consistent with a gram negative bacteria. 
+> - Next I looked for genes that could be used on 
+
+
 
 
